@@ -1,0 +1,21 @@
+﻿<Window x:Class="TemplatesApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TemplatesApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <ListBox Name="listBox" HorizontalAlignment="Left" Height="95" Margin="62,37,0,0" VerticalAlignment="Top" Width="84"/>
+        <ScrollBar HorizontalAlignment="Left" Margin="236,37,0,0" VerticalAlignment="Top" Height="95"/>
+        <DataGrid AutoGenerateColumns="False" CanUserAddRows="False" CanUserDeleteRows="False" IsReadOnly="True" Name="dataGrid" HorizontalAlignment="Left" Height="100" Margin="142,245,0,0" VerticalAlignment="Top" Width="151" >
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Id" Width="50" Binding="{Binding Id}"/>
+                <DataGridTextColumn Header="Name" Width="50" Binding="{Binding Name}"/>
+                <DataGridTextColumn Header="Price" Width="50"  Binding="{Binding Price}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+    </Grid>
+</Window>
